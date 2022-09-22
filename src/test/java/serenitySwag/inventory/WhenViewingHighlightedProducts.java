@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @ExtendWith(SerenityJUnit5Extension.class)
 class WhenViewingHighlightedProducts {
 
-    @Managed(options = "headless")
+    @Managed()
     WebDriver driver;
 
     @Steps

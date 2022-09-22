@@ -1,6 +1,7 @@
 package serenitySwag.inventory;
 
 import net.serenitybdd.core.pages.PageObject;
+import net.serenitybdd.core.pages.ResolvableElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,11 @@ public class ProductListPage extends PageObject {
     //static String PRODUCT_TITLE =".inventory_item_name";
     static By PRODUCT_TITLE =By.className("inventory_item_name");
     static String PRODUCT_IMAGE_TEXT = ("//div[@class='inventory_item'][contains(.,\"%s\")]//img");
+
+    public static By addItemToCart(String itemName) {
+        //return By.xpath("//div[@class='inventory_item'][contains(text(), '"+itemName+"')]//button");
+        return By.xpath("//div[@class='inventory_item'][contains(., '"+itemName+"')]//button");
+    }
 
     public List<String> titles(){
         //return findAll(".inventory_item_name").textContents();
