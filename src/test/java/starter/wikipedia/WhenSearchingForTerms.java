@@ -1,10 +1,8 @@
 package starter.wikipedia;
 
 import net.serenitybdd.core.Serenity;
-import net.serenitybdd.core.steps.UIInteractionSteps;
 import net.serenitybdd.junit5.SerenityJUnit5Extension;
 import net.thucydides.core.annotations.Managed;
-import net.thucydides.core.annotations.SingleBrowser;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
